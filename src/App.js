@@ -1,3 +1,5 @@
+import ReactDOM from 'react-dom';
+
 import {useState} from 'react';
 import {useEffect} from 'react';
 
@@ -55,5 +57,7 @@ function Profile() {
     </>
   );
 }
+
+ReactDOM.render(<h1>Hello everyone!</h1>, document.getElementById('root'));
 
 export default App;
