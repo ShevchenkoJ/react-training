@@ -19,7 +19,6 @@ function ShoppingList() {
     return (
       <ul>{listItems}</ul>
     );
-    console.log("List");
 }
   
 export default ShoppingList;
