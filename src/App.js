@@ -1,8 +1,10 @@
-import {useState} from 'react';
-import {useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 import logo from './logo.svg';
 import './App.css';
+import Profile, {user} from './components/Profile';
+import MyButton from './components/MyButton';
+import ShoppingList from './components/ShoppingList';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>Test of export: {user.name}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -23,36 +26,8 @@ function App() {
       </header>
       <MyButton />
       <Profile />
+      <ShoppingList />
     </div>
-  );
-}
-
-function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
-}
-
-const user = {
-  name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 80,
-};
-
-function Profile() {
-  return (
-    <>
-      <h1>{user.name}</h1>
-      <img
-        className="avatar"
-        src={user.imageUrl}
-        alt={'Photo of ' + user.name}
-        style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }}
-      />
-    </>
   );
 }
 
