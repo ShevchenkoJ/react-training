@@ -1,0 +1,21 @@
+.confirmation-button_wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("./confirmationButton_background.jpg");
+}
+
+.confirmation-button {
+    padding: 15px;
+    min-width: 370px;
+    border: none;
+    border-radius: 6px;
+    font-family: monospace;
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 18px;
+}
+
+.confirmation-button:hover {
+    opacity: 0.9;
+}
