@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 
-import logo from './logo.svg';
 import './App.css';
-import Profile, {user} from './components/Profile/Profile';
+import Header from './components/Header/Header';
+import Profile from './components/Profile/Profile';
 import ConfirmationButton from './components/ConfirmationButton/ConfirmationButton';
 import ShoppingList from './components/ShoppingList/ShoppingList';
 
@@ -12,25 +12,14 @@ function App() {
   // Watch it and update it on the App() level.
   return (
     <div className="App">
-      <header className="App-header">
-        {/* {btnText} */}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Test of export: {user.name}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React (1)
-        </a>
-      </header>
+      <Header/>
       <ConfirmationButton />
-      <Profile />
-      <ShoppingList />
+      <div className="profile_wrapper">
+        <Profile />
+      </div>
+      <div className="shopping-list_wrapper">
+        <ShoppingList />
+      </div>
     </div>
   );
 }
