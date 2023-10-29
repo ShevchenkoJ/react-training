@@ -10,13 +10,21 @@
     border: none;
     border-radius: 6px;
     font-family: monospace;
-    background-color: #000;
-    opacity: 0.8;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-size: 18px;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .confirmation-button:hover {
-    opacity: 0.9;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.confirmation-button:active {
+    background-color: #f8f8f8;
+}
+
+.confirmation-button:focus {
+    background-color: #f8f8f8;
 }
