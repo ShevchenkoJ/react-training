@@ -1,3 +1,5 @@
+import './Profile.css';
+
 export const user = {
     name: 'Hedy Lamarr',
     imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
