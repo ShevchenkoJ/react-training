@@ -1,5 +1,6 @@
 import logo from '../../logo.svg';
 import Profile, {user} from '../Profile/Profile';
+import './Header.css';
 
 function Header() {
     return (
