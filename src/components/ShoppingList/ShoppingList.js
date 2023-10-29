@@ -1,3 +1,5 @@
+import './ShoppingList.css';
+
 const products = [
     { title: 'Cabbage', isFruit: false, id: 1 },
     { title: 'Garlic', isFruit: false, id: 2 },
@@ -7,9 +9,11 @@ const products = [
 function ShoppingList() {
     const listItems = products.map(product =>
       <li
+        className='shopping-list_item'
         key={product.id}
         style={{
-          color: product.isFruit ? 'magenta' : 'darkgreen'
+          background: product.isFruit ? '#000' : '#fff',
+          color: product.isFruit ? '#fff' : '#000'
         }}
       >
         {product.title}
@@ -17,7 +21,7 @@ function ShoppingList() {
     );
   
     return (
-      <ul>{listItems}</ul>
+        <ul className='shopping-list'>{listItems}</ul>
     );
 }
   

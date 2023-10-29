@@ -1,0 +1,16 @@
+.shopping-list_wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("./shoppingList_background.jpeg");
+    background-position: bottom;
+}
+
+.shopping-list {
+    list-style: none;
+    display: flex;
+}
+
+.shopping-list_item {
+    margin-right: 15px;
+    padding: 15px 20px;
+}
