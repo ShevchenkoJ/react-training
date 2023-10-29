@@ -1,10 +1,12 @@
 import {useState, useEffect} from 'react';
 
-import './App.css';
 import Header from './components/Header/Header';
 import Profile from './components/Profile/Profile';
 import ConfirmationButton from './components/ConfirmationButton/ConfirmationButton';
 import ShoppingList from './components/ShoppingList/ShoppingList';
+
+import './App.css';
+
 
 function App() {
   // let btnText = '';
